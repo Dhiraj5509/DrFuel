@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Careers</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <style>
+            html{
+                width: 100%;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Century Gothlic;
+                background: url(2-bro-s-media-oJCtlVPx2uk-unsplash.jpg)no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+            }
+
+            .main {
+                height: 100vh;
+                width: 100%;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+
+            }
+            .main .Dr h1{
+                padding-top:  5px;
+                text-align: center;
+                font-size: 40px;
+                color: lightgreen;
+                padding: 0px ;                 
+            }
+            .main h1
+            {
+                padding-top: 9%;
+                color: darkgray; 
+                font-size: 40px;
+            }
+            .main h2
+            {
+                color: darkgray; 
+                font-size: 40px;   
+            }
+            .main button
+            {
+                padding:7px ; 
+                width: 350px;
+                font-size: 25px;
+                background: none;
+                color: palevioletred;
+                border: 2px solid palevioletred;
+                border-radius: 7px;
+            }
+            .main button:hover
+            {
+                background: white;
+            }
+            .footer
+            {
+                margin-top: 100px ;
+                border: 2px solid #000000 ; 
+                background: black ; 
+                margin-bottom: 50px ;
+                padding-bottom: 20px ;
+            }
+
+            .footer h4{
+                font-size: 20px; 
+                color: white ;
+                text-align: center;
+            }
+            .fontlarge {
+                font-size: 20px;
+            }
+            button:hover{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-top">
+            <div class="w3-row w3-padding w3-black">
+                <div class="w3-col s3 fontlarge">
+                    <a href="Home.jsp" class="w3-button w3-block w3-black"><i class="fa fa-home"></i> HOME</a>
+                </div>
+                <div class="w3-col s3 fontlarge">
+                    <a href="Location.jsp" class="w3-button w3-block w3-black"><i class="fa fa-angle-double-left"></i> GET FUEL <i class="fa fa-angle-double-right"></i></a>
+                </div>
+                <div class="w3-col s3 fontlarge">
+                    <a href="AboutUs.html" class="w3-button w3-block w3-black"><i class="fa fa-user"></i>  ABOUT US</a>
+                </div>
+
+
+                <div class="w3-col s3 fontlarge">
+                    <div class="dropdown fontlarge">
+                        <button class="btn btn-primary dropdown-toggle fontlarge" type="button" data-toggle="dropdown">More
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu fontlarge">
+                            <li><a href="ContactUs.html"><i class="fa fa-envelope"></i> CONTACT US</a></li>
+                            <li><a href="Logout" accesskey="1"><i class="fa fa-sign-out"></i> LOGOUT</a></li>
+                            <li><a href="Careers.html"><i class="fa fa-briefcase"></i> CAREERS</a></li>
+                            <li><a href="ChangePassword.html"><i class="fa fa-key icon"></i> CHANGE PASSWORD</a></li>
+                            <li><a href="AboutUs.html"><i class="fa fa-user"></i>  ABOUT US</a></li>
+                            <li><a href="FAQ.html"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ'S</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="main">
+
+            <h1>Help us with your precious experience</h1>
+            <h2>Boost your Career</h2>
+            <button type="button" onclick="window.location.href = 'CareersForm.html';">DRIVE FOR DR.FUEL</button>
+        </div>
+        <div class="footer" > 
+            <h4>Designed and developed: Dhiraj and Jaydutt - &copy 2021 All Rights Reserved Privacy Policy</h4>
+        </div>
+    </body>
+</html>

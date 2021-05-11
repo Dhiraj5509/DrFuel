@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>FAQs</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: #bedfe8;
+            }
+
+            .FAQs {
+                max-width: 800px;
+            }
+
+            .FAQs .contentBx {
+                position: relative;
+                margin: 10px 20px;
+            }
+
+            .FAQs .contentBx .label {
+                position: relative;
+                padding: 10px;
+                background: #2694af;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .FAQs .contentBx .label::before {
+                content: '+';
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                font-size: 1.5em;
+            }
+
+            .FAQs .contentBx.active .label::before {
+                content: '-';
+            }
+
+            .FAQs .contentBx .content {
+                position: relative;
+                background: #fff;
+                height: 0;
+                overflow: hidden;
+                transition: 0.5s;
+                overflow-y: auto;
+            }
+
+            .FAQs .contentBx.active .content {
+                height: 150px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="FAQs">
+            <div class="contentBx">
+                <div class="label">How do you find my vehicle?</div>
+                <div class="content">
+                    <p>Our service pros head straight to your parking spot when you pin your location in the website. We confirm its you based on the vehicle details you provide (make, model, license plate, etc.)</p>
+
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">What do I do if I need to leave or move my car?</div>
+                <div class="content">
+                    <p>Sorry in this case , penalty will be taken from you</p>
+
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">How do I know the quantity is correct?</div>
+                <div class="content">
+                    <p>Our trucks have approved Weights and Measures pumps, just like the ones at fuel stations. Our pumps are regularly calibrated to make sure we deliver the correct quantity every time.</p>
+
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">When do you deliver?</div>
+                <div class="content">
+                    <p>For the majority of boost zones, free standard delivery is Monday through Friday by 4:30 PM. Express options may be available for delivery by noon, or later in the day  fees apply. Check the app or reach out to our support team if you would
+                        like more information on delivery windows at your campus.</p>
+
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">How much does it cost?</div>
+                <div class="content">
+                    <p>Delivery is free, there are no membership fees, and our prices are competitive to the gas stations in your area.
+                    </p>
+
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">How are you priced so competitively?</div>
+                <div class="content">
+                    <p>Our reinvented the fuel supply chain allows us to save on the costs of running a traditional fuel station. We happily pass those savings onto you.
+                    </p>
+
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">What types of fuel do you offer?</div>
+                <div class="content">
+                    <p>Unleaded regular (87-octane) and unleaded premium (91-octane in California and 93-octane elsewhere) gas. We hope to offer diesel soon!
+                    </p>
+
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">Where does your fuel come from?</div>
+                <div class="content">
+                    <p>Our fuel comes straight from the refinery and we only purchase from well-known, trusted suppliers.
+                    </p>
+
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">How much Fuel do I get?</div>
+                <div class="content">
+                    <p>We always deliver the fuel you asked us to provide.
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+        <script>
+            const FAQs = document.getElementsByClassName('contentBx');
+
+            for (i = 0; i < FAQs.length; i++) {
+                FAQs[i].addEventListener('click', function () {
+                    this.classList.toggle('active');
+                });
+            }
+        </script>
+    </body>
+
+</html>
